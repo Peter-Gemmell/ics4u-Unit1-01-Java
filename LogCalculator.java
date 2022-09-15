@@ -12,14 +12,14 @@ import java.io.Console;
 */
 final class LogCalculator {
     /**
-    * Density of logs, in kg/m
+    * Density of logs, in kg/m.
     */
-    public static final float logWeight = 20;
+    public static final float LOG_WEIGHT = 20;
 
     /**
-    * max load of logs,
+    * Max load of logs.
     */
-    public static final float truckWeight = 1100;
+    public static final float TRUCK_WEIGHT = 1100;
 
     /**
     * Prevent instantiation.
