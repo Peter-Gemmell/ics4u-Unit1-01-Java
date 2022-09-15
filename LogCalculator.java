@@ -11,6 +11,15 @@ import java.io.Console;
 * This program calculates log length.
 */
 final class LogCalculator {
+    /**
+    * Density of logs, in kg/m
+    */
+    public static final float logWeight = 20;
+
+    /**
+    * max load of logs,
+    */
+    public static final float truckWeight = 1100;
 
     /**
     * Prevent instantiation.
@@ -37,8 +46,8 @@ final class LogCalculator {
                         + "log (.25, .5, 1): ");
 
         final float logSize = Float.valueOf(logString);
-        final float weight = logSize * 20;
-        final float logAmount = 1100 / weight;
+        final float weight = logSize * logWeight;
+        final float logAmount = truckWeight / weight;
         System.out.println(logAmount + " " + logSize + " logs would fill the"
                         + " truck");
         System.out.println("\nDone.");
