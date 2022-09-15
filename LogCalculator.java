@@ -35,11 +35,12 @@ final class LogCalculator {
         final Console console = System.console();
         final String logString = console.readLine("What is the size of the"
                         + "log (.25, .5, 1): ");
+
         final float logSize = Float.valueOf(logString);
         final float weight = logSize * 20;
         final float logAmount = 1100 / weight;
         System.out.println(logAmount + " " + logSize + " logs would fill the"
-                        + "truck");
+                        + " truck");
         System.out.println("\nDone.");
     }
 }
